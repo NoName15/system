@@ -15,7 +15,7 @@ client.on("message", message => {
       .setColor("#000000") 
       .setDescription(`
       
-                    Official-Bot Commands
+                    ON-Bot Commands
 Please Choose:
 
              
@@ -71,7 +71,7 @@ ${prefix}warn ⇏ لتحضير شخص ما
 .addField(' الاعضاء👥 ',` [${client.users.size}] `)
 .addField('الرومات📚 ',`[${client.channels.size}]`) 
 .addField(' البنق🚀 ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField('مصمم  + صاحب البوت ',`Official Team`)
+.addField('مصمم  + صاحب البوت ',`JakeY#2019`)
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -283,7 +283,7 @@ if(!true) return;
 
 
 client.on('message', function(message) {
-	const myID = "337309575864647680";
+	const myID = "518443986961301523";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -785,4 +785,4 @@ client.on('message', message => {
            }
 });
 
-client.login('NDcwMzIyNjgwMTcyOTA0NDYw.DjUryA.0JHYWQ67N6lMSZguSCoutOxU29s')
+client.login(process.env.BOT_TOKEN)
